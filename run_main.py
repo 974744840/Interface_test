@@ -17,15 +17,14 @@ def add_case(caseName='case',rule='test*.py'):
 
     '''通过unittest模块下的defaultTestLoader类，的discover方法：自动执行目录case下'''
     discover=unittest.defaultTestLoader.discover(case_path,
-                                                 pattern=rule,
-                                                 top_level_dir=None)
-    print(discover)
+                                                 pattern=rule)
+    # print(discover)
     return discover
 
-'''run_case方法：将上面方法加载出的文件全部执行并省城报告！'''
+'''run_case方法：将上面方法加载出的文件全部执行并产生报告！'''
 def run_case(all_case,reportName='report'):
     '''获取现在的时间：strftime'''
-    now=time.strftime('%Y_%m_%d_%H_%M_%S')
+    # now=time.strftime('%Y_%m_%d_%H_%M_%S')
     '''报告存储的路径'''
     report_path=os.path.join(cur_path,reportName)
     '''判断是否存在，不在创建，如果存在呢？？'''
@@ -33,7 +32,7 @@ def run_case(all_case,reportName='report'):
     '''路径+文件名命名=文件全路径'''
     # report_abspath=os.path.join(report_path,now+'_result.html')
     report_abspath = os.path.join(report_path,'result.html')
-    print('report path:%s',report_path)
+    print('report path:%s'%report_path)
     '''打开报告，往里面写内容'''
     fp=open(report_abspath,'wb')
     '''调用HTMLTestRunner方法，规划格式'''

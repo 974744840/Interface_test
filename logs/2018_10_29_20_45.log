@@ -1,0 +1,36 @@
+2018-10-29 20:45:50,916- send - INFO - ******************正在执行用例：-----  t_001  ----******************
+2018-10-29 20:45:50,916- send - INFO - 请求方式：get, 请求url:http://japi.juhe.cn/qqevaluate/qq
+2018-10-29 20:45:50,917- send - INFO - 请求params：{'key': '正确的', 'qq': '283340479'}
+2018-10-29 20:45:51,213- send - INFO - 返回的状态码：200
+2018-10-29 20:45:51,214- send - INFO - 响应时间：0.29239
+2018-10-29 20:45:51,214- send - INFO - 用例测试结果:  t_001---->fail
+2018-10-29 20:45:51,253- Test_api - INFO - 返回实际结果为->：
+{"resultcode":"101","reason":"KEY ERROR!","result":[],"error_code":10001}
+2018-10-29 20:45:51,254- Test_api - INFO - 检查点为->："reason":"successed!"
+2018-10-29 20:45:51,255- send - INFO - ******************正在执行用例：-----  t_002  ----******************
+2018-10-29 20:45:51,255- send - INFO - 请求方式：get, 请求url:http://japi.juhe.cn/qqevaluate/qq
+2018-10-29 20:45:51,255- send - INFO - 请求params：{'key': '错误的', 'qq': '283340479'}
+2018-10-29 20:45:51,380- send - INFO - 返回的状态码：200
+2018-10-29 20:45:51,380- send - INFO - 响应时间：0.123047
+2018-10-29 20:45:51,380- send - INFO - 用例测试结果:  t_002---->pass
+2018-10-29 20:45:51,417- Test_api - INFO - 返回实际结果为->：
+{"resultcode":"101","reason":"KEY ERROR!","result":[],"error_code":10001}
+2018-10-29 20:45:51,417- Test_api - INFO - 检查点为->："reason":"KEY ERROR!"
+2018-10-29 20:45:51,418- send - INFO - ******************正在执行用例：-----  t_003  ----******************
+2018-10-29 20:45:51,418- send - INFO - 请求方式：get, 请求url:http://v.juhe.cn/weather/index
+2018-10-29 20:45:51,418- send - INFO - 请求params：{'cityname': '上海', 'dtype': 'json', 'format': '1', 'key': 'xxx'}
+2018-10-29 20:45:51,577- send - INFO - 返回的状态码：200
+2018-10-29 20:45:51,577- send - INFO - 响应时间：0.157214
+2018-10-29 20:45:51,577- send - INFO - 用例测试结果:  t_003---->fail
+2018-10-29 20:45:51,614- Test_api - INFO - 返回实际结果为->：{"resultcode":"101","reason":"错误的请求KEY","result":null,"error_code":10001}
+2018-10-29 20:45:51,614- Test_api - INFO - 检查点为->："reason":"successed!"
+2018-10-29 20:45:51,614- send - INFO - ******************正在执行用例：-----  t_004  ----******************
+2018-10-29 20:45:51,614- send - INFO - 请求方式：post, 请求url:http://192.168.3.239:88/zentao/user-login.html
+2018-10-29 20:45:51,615- send - INFO - post请求body的数据类型为：data 
+2018-10-29 20:45:51,615- send - INFO - post请求的headers：{'Content-Type': 'application/x-www-form-urlencoded'}
+2018-10-29 20:45:51,615- send - INFO - post请求的body内容：{'account': 'admin', 'password': '123456', 'keepLogin[]': 'on', 'referer': ''}
+2018-10-29 20:46:12,620- send - INFO - ******************正在执行用例：-----  t_005  ----******************
+2018-10-29 20:46:12,620- send - INFO - 请求方式：post, 请求url:http://192.168.3.239:88/zentao/user-login.html
+2018-10-29 20:46:12,620- send - INFO - post请求body的数据类型为：json 
+2018-10-29 20:46:12,620- send - INFO - post请求的headers：{'Content-Type': 'application/x-www-form-urlencoded'}
+2018-10-29 20:46:12,620- send - INFO - post请求的body内容：{'account': 'admin', 'password': '123456', 'keepLogin[]': 'on', 'referer': ''}

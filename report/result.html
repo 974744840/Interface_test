@@ -189,9 +189,9 @@ function showOutput(id, name) {
 
 <div class='heading'>
 <h1>自动化测试报告，测试结果如下</h1>
-<p class='attribute'><strong>Start Time:</strong> 2018-10-24 10:45:57</p>
-<p class='attribute'><strong>Duration:</strong> 0:00:00</p>
-<p class='attribute'><strong>Status:</strong> none</p>
+<p class='attribute'><strong>Start Time:</strong> 2018-10-29 20:47:10</p>
+<p class='attribute'><strong>Duration:</strong> 0:00:42.445370</p>
+<p class='attribute'><strong>Status:</strong> Pass 1 Failure 2 Error 2</p>
 
 <p class='description'>用例执行情况</p>
 </div>
@@ -221,12 +221,178 @@ function showOutput(id, name) {
     <td>View</td>
 </tr>
 
+<tr class='errorClass'>
+    <td>test_api.Test_api: 添加@classmethod 表示该方法是类级别，是类里的所有方法执行前执行setUp，类里的所有方法执行完后执行tearDown</td>
+    <td>5</td>
+    <td>1</td>
+    <td>2</td>
+    <td>2</td>
+    <td><a href="javascript:showClassDetail('c1',5)">Detail</a></td>
+</tr>
+
+<tr id='ft1.1' class='none'>
+    <td class='failCase'><div class='testcase'>test_api_1: dict() -> new empty dictionary</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.1')" >
+        fail</a>
+
+    <div id='div_ft1.1' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.1').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.1: Traceback (most recent call last):
+  File "F:\python\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "G:\Python code\Interface\case\test_api.py", line 55, in test_api
+    self.assertTrue(check in res_text)
+AssertionError: False is not true
+Traceback (most recent call last):
+  File "F:\python\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "G:\Python code\Interface\case\test_api.py", line 55, in test_api
+    self.assertTrue(check in res_text)
+AssertionError: False is not true
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='pt1.2' class='hiddenRow'>
+    <td class='none'><div class='testcase'>test_api_2: dict() -> new empty dictionary</div></td>
+    <td colspan='5' align='center'>pass</td>
+</tr>
+
+<tr id='ft1.3' class='none'>
+    <td class='failCase'><div class='testcase'>test_api_3: dict() -> new empty dictionary</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.3')" >
+        fail</a>
+
+    <div id='div_ft1.3' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.3').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.3: Traceback (most recent call last):
+  File "F:\python\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "G:\Python code\Interface\case\test_api.py", line 55, in test_api
+    self.assertTrue(check in res_text)
+AssertionError: False is not true
+Traceback (most recent call last):
+  File "F:\python\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "G:\Python code\Interface\case\test_api.py", line 55, in test_api
+    self.assertTrue(check in res_text)
+AssertionError: False is not true
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.4' class='none'>
+    <td class='errorCase'><div class='testcase'>test_api_4: dict() -> new empty dictionary</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.4')" >
+        error</a>
+
+    <div id='div_ft1.4' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.4').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.4: Traceback (most recent call last):
+  File "F:\python\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "G:\Python code\Interface\case\test_api.py", line 46, in test_api
+    base_api.wirte_result(res, filename=reportxlsx)
+  File "G:\Python code\Interface\common\base_api.py", line 100, in wirte_result
+    row_nub = result['rowNum']
+KeyError: 'rowNum'
+Traceback (most recent call last):
+  File "F:\python\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "G:\Python code\Interface\case\test_api.py", line 46, in test_api
+    base_api.wirte_result(res, filename=reportxlsx)
+  File "G:\Python code\Interface\common\base_api.py", line 100, in wirte_result
+    row_nub = result['rowNum']
+KeyError: 'rowNum'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
+<tr id='ft1.5' class='none'>
+    <td class='errorCase'><div class='testcase'>test_api_5: dict() -> new empty dictionary</div></td>
+    <td colspan='5' align='center'>
+
+    <!--css div popup start-->
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_ft1.5')" >
+        error</a>
+
+    <div id='div_ft1.5' class="popup_window">
+        <div style='text-align: right; color:red;cursor:pointer'>
+        <a onfocus='this.blur();' onclick="document.getElementById('div_ft1.5').style.display = 'none' " >
+           [x]</a>
+        </div>
+        <pre>
+        
+ft1.5: Traceback (most recent call last):
+  File "F:\python\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "G:\Python code\Interface\case\test_api.py", line 46, in test_api
+    base_api.wirte_result(res, filename=reportxlsx)
+  File "G:\Python code\Interface\common\base_api.py", line 100, in wirte_result
+    row_nub = result['rowNum']
+KeyError: 'rowNum'
+Traceback (most recent call last):
+  File "F:\python\lib\site-packages\ddt.py", line 145, in wrapper
+    return func(self, *args, **kwargs)
+  File "G:\Python code\Interface\case\test_api.py", line 46, in test_api
+    base_api.wirte_result(res, filename=reportxlsx)
+  File "G:\Python code\Interface\common\base_api.py", line 100, in wirte_result
+    row_nub = result['rowNum']
+KeyError: 'rowNum'
+
+
+        </pre>
+    </div>
+    <!--css div popup end-->
+
+    </td>
+</tr>
+
 <tr id='total_row'>
     <td>Total</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
-    <td>0</td>
+    <td>5</td>
+    <td>1</td>
+    <td>2</td>
+    <td>2</td>
     <td>&nbsp;</td>
 </tr>
 </table>
